@@ -1,48 +1,92 @@
-<?php
+<!DOCTYPE html>
+<html lang="es">
 
-$nombre = 'Jose';
-$edad = 25;
+<head>
+    <title>PRIMERA PÁGINA</title>
+    <meta charset="UTF-8" />
+</head>
 
-if ($nombre == 'Jose') {
-    echo 'SI SE LLAMA JOSEK';
-}else {
-    echo 'no se llama Josek';
-}
+<body>
+    <?php
+				/*Esto es un comentario de varias líneas*/
+				//Esto es un comentario de una línea
+				$var_1 = "Fran";
+				$var_2 = "Juan";
+				$resultado = $var_1 . " " . $var_2; //Concatena cadenas
+				$var_3 = 7;
+				/*Echo muestra lo que pongas*/
+				echo "<h1>Mi primera página de PHP" . $var_3 ."</h1>"; 
+				
+				echo "<p>Y mi nombre compuesto es: " . $resultado ."</p>";
+				
+				/*Operadores MATEMÁTICOS*/ 
+				$var_4 = (5+9-7*9/2);
+				
+				//IF Y NOT. OPERADORES LÓGICOS
+				if($var_4 % 2 == 0 && $var_4 > 0) //AND IGUAL QUE JAVA
+				{
+					echo "<p>El número " .$var_4 . " es par y positivo</p>";
+				}
+				//ELSE IF IGUAL QUE JAVA
+				else if($var_4 < 0 || $var_4 == 0) //OR IGUAL QUE JAVA
+				{
+					echo "<p>El número " .$var_4 . " es impar y negativo</p>";
+				}
+				else
+				{
+					echo "<p>No hay ningún número</p>";
+				}
+				
+				//SWITCH
+				$var_5 = "Martes";
+				
+				switch($var_5){
+					
+					case "Lunes" :
+						echo "<p>Día " . $var_5 . "</p>";
+					break; //IMPORTANTE
+						
+					case "Martes" :
+						echo "<p>Día " . $var_5 . "</p>";
+					break; //IMPORTANTES
+						
+					default :
+						echo "<p>Día " . $var_5 . "</p>";
+				
+				}
+				
+				//BUCLES 
+				//FOR
+				$var_6 = 1;
+				
+				//Si quiero sumar de 3 en 3 seria asi 
+				/*for($var_6 = 0; $var_6 = 5; $var_6 = $var_6+3)*/
+				
+				for($var_6 = 0; $var_6 < 5; $var_6++){
+					
+					echo "<p> " . $var_6 . "</p>";
+				}
+				
+				
+				//WHILE
+				$var_7 = 1;
+				
+				while($var_7 < 7){
+				
+					echo "<p> " . $var_7 . "</p>";
+					$var_7++;
+				}
+		
+				
+				//DO WHILE
+				do{
+					
+					echo "<p> " . $var_7 . "</p>";
+					$var_7++;
+				
+				}while($var_7 < 8);
+				
+			?>
+</body>
 
-switch ($edad) {
-    case 25:
-         echo 'SIII ES SU EDAADDD';
-        break;
-}
-
-for ($i=0; $i < 10; $i++) { 
-    echo '<p>' . $i . '</p>';
-}
-
-$array = [
-    'edad' => 23,
-    'nombre' => 'Fran'
-];
-
-var_dump($array);
-
-echo '<p>'. $array['edad'] .'</p>';
-
-function test($dato){
-    echo '<h1>Salida de funcion</h1>';
-}
-
-$array2 = array('Manzana', 'Pera', 'Platano');
-var_dump($array2);
-
-echo '<p>'. $array2[1] .'</p>';
-
-$array2[] = 'Fresas';
-
-var_dump($array2);
-
-for ($i=0; $i < count($array2); $i++) { 
-    echo '<p>'. $array2[$i] .'</p>';
-}
-
-?>
+</html>

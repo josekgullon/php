@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Suscripción boletín</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+
+        td {
+            padding: 0.2em 2em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Suscripción electronica a nuestro boletín.</h1>
+    <p>Nota: Este es un formulario de ejemplo en el que los datos aquí escritos se
+        trasladan a otra página.</p>
+    <form action="formularioErrores2.php" method="POST" />
+
+    <p>Nombre: <input type="text" name="nombre" />
+        Apellidos: <input type="text" name="apellidos" size="40" />
+        e-mail: <input type="text" name="email" size="35" /></p>
+    <p>contraseña: <input type="password" name="contras" />
+    <table>
+        <tr>
+            <td>
+                sexo
+                <input type="radio" name="sexo" value="V" /> Varón
+                <input type="radio" name="sexo" value="M" /> Mujer</p>
+            </td>
+            <td>
+                Nivel de estudios
+                <input type="radio" name="estudios" value="elemental" checked="checked">
+                Certificado escolar
+                <input type="radio" name="estudios" value="basico" />
+                Graduado en E.S.O.
+                <input type="radio" name="estudios" value="bachiller" />
+                Bachiller - Formación Profesional 
+                <input type="radio" name="estudios" value="Diplomado" />
+                Diplomado
+                <input type="radio" name="estudios" value="licenciado" />
+                Licenciado o Doctorado
+            </td>
+            <td>
+                Interesado en los siguientes temas: 
+                <input type="checkbox" name="temas[]" value="Musica"/> Música
+                <input type="checkbox" name="temas[]" value="Deportes"/> Deportes
+                <input type="checkbox" name="temas[]" value="Cine"/> Cine
+                <input type="checkbox" name="temas[]" value="Libros"/> Libros
+                <input type="checkbox" name="temas[]" value="Ciencia"/> Ciencia</p>
+            </td>
+        </tr>
+    </table>
+    <p>Día de la semana que le interesa recibirlo:</p>
+    <select name="dia">
+        <option>día de la semana:</option>
+        <option value="Lunes">lunes</option>
+        <option value="Martes">martes</option>
+        <option value="Miércoles">miercoles</option>
+        <option value="Jueves">jueves</option>
+        <option value="Viernes">viernes</option>
+        <option value="Sábado">sábado</option>
+        <option value="Domingo">domingo</option>
+    </select>
+    </p>
+    <p>Su opinión: 
+        <textarea name="comentario" rows="5" cols="50">Comentario: </textarea>
+    <p>
+        <input type="submit" value="Comprobar el formulario" name="btnEnviar">
+        <input type="reset" value="borrar todo">
+    </p>
+    </form>
+</body>
+
+</html>

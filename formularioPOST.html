@@ -1,0 +1,30 @@
+<DOCTYPE html>
+
+    <head>
+        <title>FORMULARIO</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+
+    <body>
+        <h1>Esta es mi super página</h1>
+        <form method="POST" action="recogidaPOST2.php">
+            <p>Nombre: <input type="text" name="nombre"></input></p>
+
+            <p>Nacido en: <select name="provincia">
+                    <option>Málaga</option>
+                    <option>Granada</option>
+                    <option>Cadiz</option>
+                </select>
+            </p>
+
+            <p>Sexo: Hombre <input type="radio" name="sexo" value="Hombre" required>
+                Mujer <input type="radio" name="sexo" value="Mujer">
+            </p>
+
+            <p>Comentarios: <textarea name="comentarios" rows="5" cols="30"></textarea></p>
+
+            <p><button type="submit" value="Enviar" name="btnEnviar">Enviar</button></p>
+        </form>
+    </body>
+
+    </html>
