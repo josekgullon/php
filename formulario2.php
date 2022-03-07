@@ -1,4 +1,4 @@
-<DOCTYPE html>
+z<DOCTYPE html>
 
     <head>
         <title>FORMULARIO</title>
@@ -16,7 +16,7 @@
                 </select>
             </p>
 
-            <p>Sexo: Hombre <input type="radio" name="sexo" value="Hombre" required>
+            <p>Sexo: Hombre <input type="radio" name="sexo" value="Hombre" checked='checked'>
                 Mujer <input type="radio" name="sexo" value="Mujer">
             </p>
 

@@ -20,6 +20,7 @@
         echo "<p>El apellido es: ".$_POST['apellidos']."</p>";
         echo "<p>El email es: ".$_POST['email']."</p>";
         echo "<p>La contraseña es: ".md5($_POST['contras'])."</p>";
+        // LA CONTRASEÑA ESTÁ CODIFICADA CON .MD5
         echo "<p>El sexo es: ".$_POST['sexo']."</p>";
         echo "<p>El nivel de estudios es: ".$_POST['estudios']."</p>";
         // LOS TEMAS ES UN ARRAY DE POSIBLES SELECCIONES DEL USUARIO, POR LO QUE COMPROBAREMOS SI HA SELECCIONADO ALGUNA PARA MOSTRAR UN MENSAJE DIFERENTE EN CADA CASO

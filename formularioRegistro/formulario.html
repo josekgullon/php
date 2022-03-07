@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form id="contacto-frm" name="contacto_frm" action="" method="GET">
+    <form id="contacto-frm" name="contacto_frm" action="formulario.php" method="POST">
         <fieldset>
             <legend>Contacto</legend>
             <label for="nombre">Nombre: </label>
@@ -23,8 +23,9 @@
             <input type="text" id="email" name="email_txt" class="cambio" />
             <br /><br />
             <label for="sexo">Sexo:</label>
-            <input type="radio" id="M" name="sexo_rdo" value="M" /> <label for="M">Masculino</label>
+            <input type="radio" id="M" name="sexo_rdo" value="M" checked/> <label for="M">Masculino</label>
             <input type="radio" id="F" name="sexo_rdo" value="F" /><label for="F">Femenino</label>
+            <input type="radio" id="O" name="sexo_rdo" value="O" /><label for="O">Otro</label>
             <br /><br />
             <label for="asunto">Asunto: </label>
             <input type="text" id="asunto" name="asunto_txt" class="cambio" />
@@ -33,8 +34,8 @@
             <br />
             <textarea name="comentarios_txa" id="comentarios" cols="50" rows="5" class="cambio"></textarea>
             <br /><br />
-            <input type="button" id="enviar" class="cambio" name="enviar_btn" value="Enviar" />
-            <input type="button" id="limpiar" class="cambio" name="limpiar_btn" value="Limpiar" />
+            <input type="submit" id="enviar" class="cambio" name="enviar_btn" value="Enviar" />
+            <input type="reset" id="limpiar" class="cambio" name="limpiar_btn" value="Limpiar" />
         </fieldset>
     </form>
 

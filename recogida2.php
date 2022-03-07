@@ -1,5 +1,13 @@
 <?php
-	if(isset($_POST["btnEnviar"])){
+if(isset($_POST["btnenviar"]))
+{
+	$error_nombre = $_POST["nombre"]=="";
+	$error_comentario = $_POST["comentarios"]=="";
+	$error = ($error_nombre || $error_comentario);
+
+
+	if (!$error) {
+		
 ?>
 
 <!DOCTYPE html>
@@ -56,5 +64,5 @@
 		header("Location: formulario2.php");
 
 	}
-
+}
 ?>
