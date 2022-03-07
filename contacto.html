@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="get" action="datos.php">
+        <p>Nombre: <input type="text" name="nombre"></input></p>
+
+        <p>Nacido en: <select name="provincia">
+                <option>Málaga</option>
+                <option>Granada</option>
+                <option>Cadiz</option>
+            </select>
+        </p>
+
+        <p>Sexo: Hombre <input type="radio" name="sexo" value="Hombre" required>
+            Mujer <input type="radio" name="sexo" value="Mujer">
+
+        </p>
+
+        <p>Comentarios: <textarea name="comentarios" rows="5" cols="30"></textarea></p>
+
+        <p><button type="submit" value="Enviar" name="btnEnviar">Enviar</button></p>
+    </form>
+</body>
+</html>
